@@ -42,7 +42,7 @@ export interface FindOneResponse {
 /** DecreaseStock */
 export interface DecreaseStockRequest {
   id: number;
-  productId: number;
+  orderId: number;
 }
 
 export interface DecreaseStockResponse {

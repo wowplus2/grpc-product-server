@@ -42,6 +42,7 @@ export interface FindOneResponse {
 /** DecreaseStock */
 export interface DecreaseStockRequest {
   id: number;
+  productId: number;
 }
 
 export interface DecreaseStockResponse {

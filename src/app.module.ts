@@ -14,7 +14,7 @@ import { ProductModule } from './product/product.module';
       username: 'root',
       password: 'wlsk@0314',
       entities: ['dist/**/*.entity.{ts,js}'],
-      synchronize: true, // never true in production!
+      synchronize: false, // never true in production!
     }),
     ProductModule,
   ],

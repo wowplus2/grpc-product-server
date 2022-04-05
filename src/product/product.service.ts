@@ -23,6 +23,8 @@ export class ProductService {
   private readonly decreaseLogRepository: Repository<StockDecreaseLog>;
 
   public async findOne({ id }: FindOneRequestDto): Promise<FindOneResponse> {
+    console.log(`ProductService::findOne()`);
+    console.log(id);
     const product: Product = await this.repository.findOne({ where: { id } });
     if (!product) {
       return {

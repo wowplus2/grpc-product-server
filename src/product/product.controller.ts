@@ -25,7 +25,7 @@ export class ProductController {
     return this.service.createProduct(payload);
   }
 
-  @GrpcMethod(PRODUCT_SERVICE_NAME, 'FinndOne')
+  @GrpcMethod(PRODUCT_SERVICE_NAME, 'FindOne')
   private findOne(payload: FindOneRequestDto): Promise<FindOneResponse> {
     return this.service.findOne(payload);
   }
